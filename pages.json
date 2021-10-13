@@ -1,0 +1,76 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/purchased/index",
+			"style": {}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {}
+		},
+		{
+			"path" : "pages/readLIst/readLIst",
+			"style" : {}
+		}
+		,{
+			"path" : "pages/listenNoval/listenNoval",
+			"style" : {}
+		}
+		,{
+			"path" : "pages/listenMusic/listenMusic",
+			"style" : {}
+		}
+		,{
+			"path" : "pages/listenKnowledge/listenKnowledge",
+			"style" : {}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ffaa00",
+		"backgroundColor": "#ffaa00",
+		// 清楚默认导航栏
+		"navigationStyle":"custom"
+		// "app-plus":{
+		// 	"titleNView":false
+		// }
+	},
+	"tabBar":{
+		// 导航文字颜色
+		"selectedColor":"#dc4d2f",
+		// 导航文字大小
+		"fontSize":"12px",
+		// 底部导航区背景色
+		"backgroundColor":"#f4f7fc",
+		// 上边框颜色
+		"borderStyle":"white",
+		// 导航内容
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"首页",
+				// 未选中
+				"iconPath":"static/tabbar/index.png",
+				// 选中
+				"selectedIconPath":"static/tabbar/indexed.png"
+			},
+			{
+				"pagePath":"pages/purchased/index",
+				"text":"已购",
+				"iconPath":"static/tabbar/collection.png",
+				"selectedIconPath":"static/tabbar/collectioned.png"
+			},
+			{
+				"pagePath":"pages/mine/index",
+				"text":"我的",
+				"iconPath":"static/tabbar/mine.png",
+				"selectedIconPath":"static/tabbar/mined.png"
+			}
+		]
+	}
+}
