@@ -16,6 +16,8 @@
 			<list-header> <template #title> {{item.headerTitle}} </template> </list-header>
 			<!-- 列表内容 -->
 			<book-list :bookListArr="item.books"></book-list>
+			<!-- 播放器 -->
+			<myaudio></myaudio>
 		</block>
 	</view>
 </template>
@@ -27,6 +29,7 @@
 	import listHeader from '@/components/listHeader.vue';
 	import recommond from '@/components/compound/recommond.vue';
 	import bookList from '@/components/bookList.vue';
+	import myaudio from '@/components/myaudio.vue';
 	export default {
 		data() {
 			return {
@@ -185,7 +188,8 @@
 			functionSort,
 			listHeader,
 			recommond,
-			bookList
+			bookList,
+			myaudio
 		},
 		onLoad() {
 
